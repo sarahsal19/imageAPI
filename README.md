@@ -24,7 +24,7 @@ The project shall be working in your browser at localhost:3000, add image filena
 
 ### Copy Rights
 I have used pieces of code from the following repos and websites:
-    https://github.com/Elshafeay/ts-env/tree/express
-    https://codesandbox.io/s/vjzej?file=/src/index.ts
-    https://github.com/reem-alrashed/ImageProcessingAPI/tree/main/src
-    https://github.com/otacke/udacity-image-processing-api 
+   - https://github.com/Elshafeay/ts-env/tree/express
+   - https://codesandbox.io/s/vjzej?file=/src/index.ts
+   - https://github.com/reem-alrashed/ImageProcessingAPI/tree/main/src
+   - https://github.com/otacke/udacity-image-processing-api 
