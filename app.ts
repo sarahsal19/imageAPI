@@ -1,26 +1,22 @@
 import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import morganMiddleware from './src/middleware/logger';
-import { errorHandler } from './src/middleware/error-handler';
-import apiRouter from './src/routes';
-import { calcAverage, testFS } from './src/utils/common';
+import { errorHandler } from './src/middleware/errorHandler';
+import routes from './src/routes/imageRouter';
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+
+//use logging
 app.use(morganMiddleware);
 
-app.use('/api', apiRouter);
+app.use('/api', routes);
 
 app.get('/', (req: Request, res: Response): void => {
-  testFS();
-  res.send('Welcome to the home page!');
-});
-
-app.get('/error', (req: Request, res: Response): void => {
-  throw new Error('What are you doing!!!');
+  res.send('Welcome to the home page! Enter the image filename, width and height in the URL ');
 });
 
 app.get('*', (req: Request, res: Response): void => {
