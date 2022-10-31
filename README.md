@@ -19,7 +19,7 @@ The project shall be working in your browser at localhost:3000, add image filena
 
 #### Notes
 1. To run your tests you can simply run `npm test`.
-2. You can modify your environment variables through the `.env` file.
+2. You can modify your environment variables through adding the `.env` file (for more info, visit https://github.com/motdotla/dotenv).
 3. I have added 4 images that already been cropped using the API :)
 
 ### Copy Rights
